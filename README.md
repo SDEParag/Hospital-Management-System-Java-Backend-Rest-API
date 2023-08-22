@@ -13,7 +13,7 @@
 * IntelliJ Idea 
 * MySQL Workbench.
 
-#******** Set up HMS  project using Spring Initializer online********
+# **** Set up HMS  project using Spring Initializer online ****
 * I follow below steps:
 * Visited the Spring Initializer website at https://start.spring.io.
 * Providing the necessary project details:
@@ -33,6 +33,7 @@
 * Add "Spring Security" dependency.
 
 # Click on the "Generate" button to download the project zip file.
+
 * Extract the downloaded zip file to the desired location on the computer folder.
 * Opened IntelliJ IDEA IDE.
 * Import the project as a Maven project:
@@ -51,7 +52,9 @@
 * Right-click on the main class and select "Run" or "Debug" to start the application.
 
 # Endpoints
+
 # Endpoints The following endpoints are available: 
+
 * - [POST /api/patients](#post-apipatients) - Create a new patient
 * - [GET /api/appointment/{id}](#get-api appointment id) - Get appointment by ID.
 * - [GET /api/appointment](#get-api appointment) - Get a list of appointments.
@@ -66,6 +69,7 @@
 * - [POST /api/auth/signin](#post-api auth signin) - User authentication.
 
 # Create Patient
+
 * I am using Postman with the postman data that goes to the mysql database using JSON format.
 *  URL: http://localhost:8080/api/patients
 * Method: POST
@@ -96,8 +100,7 @@
 "totalAmount": 130.00  }
 }
 
-
-Status: 200 OK.
+   Status: 200 OK.
 
 
 * Get Appointment by ID
@@ -445,9 +448,10 @@ Json Structure
 * Method: POST
 * Request Body:
 * Json
-{
+   {
   "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXJhZ0BnbWFpbC5jb20iLCJpYXQiOjE2ODkxMDQ0NzUsImV4cCI6MTY4OTcwOTI3NH0.3g7p_IK-EYFcguk-rfDFhDUaD7A9jORjNZnGBO0vQbqQJ7UYQ9SJx57j7kaKiAnm28huFvf3LkoZ97u1gjUZ7w",
   "tokenType": "Bearer"
 
-}
+   }
+
 * Status : 200 OK
